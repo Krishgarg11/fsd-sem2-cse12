@@ -12,7 +12,6 @@ function addStudent() {
     document.getElementById("output").innerHTML = "Student Added Successfully";
     ["name", "roll", "math", "science", "english"].forEach(id => document.getElementById(id).value = "");
 }
-
 function showStudents() {
     document.getElementById("output").innerHTML = students.map(s => "Name: " + s.name + ", Roll: " + s.roll).join("<br>");
 }
