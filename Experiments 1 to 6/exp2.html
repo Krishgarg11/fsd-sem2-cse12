@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap UI Components</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body{
+      background-color: #f2f2f2;
+    }
+
+    .navbar{
+      background-color: #1f2329;
+    }
+
+    .footer{
+      background-color: #1f2329;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    .card img{
+      height: 220px;
+      object-fit: contain;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+
+    <a class="navbar-brand" href="#">TechStore</a>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Products</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Product Section -->
+<div class="container mt-5">
+
+  <div class="row g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-4">
+
+      <div class="card shadow-sm">
+
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600"
+             class="card-img-top"
+             alt="Laptop">
+
+        <div class="card-body">
+
+          <h4 class="card-title">Laptop</h4>
+
+          <p class="card-text">
+            High performance laptop
+          </p>
+
+          <h5>
+            ₹50,000
+            <span class="badge bg-success">New</span>
+          </h5>
+
+          <!-- Button trigger modal -->
+          <button class="btn btn-primary mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#laptopModal">
+            View Details
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+
+      <div class="card shadow-sm">
+
+        <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600"
+             class="card-img-top"
+             alt="Mobile">
+
+        <div class="card-body">
+
+          <h4 class="card-title">Mobile</h4>
+
+          <p class="card-text">
+            Latest smartphone
+          </p>
+
+          <h5>
+            ₹30,000
+            <span class="badge bg-danger">Sale</span>
+          </h5>
+
+          <button class="btn btn-primary mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mobileModal">
+            View Details
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+
+      <div class="card shadow-sm">
+
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600"
+             class="card-img-top"
+             alt="Headphones">
+
+        <div class="card-body">
+
+          <h4 class="card-title">Headphones</h4>
+
+          <p class="card-text">
+            Noise cancelling
+          </p>
+
+          <h5>
+            ₹5,000
+            <span class="badge bg-success">New</span>
+          </h5>
+
+          <button class="btn btn-primary mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#headphoneModal">
+            View Details
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Laptop Modal -->
+<div class="modal fade" id="laptopModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Laptop Details</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        Powerful laptop with latest processor and SSD storage.
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Modal -->
+<div class="modal fade" id="mobileModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Mobile Details</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        Modern smartphone with excellent camera and battery life.
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Headphone Modal -->
+<div class="modal fade" id="headphoneModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Headphone Details</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        Wireless headphones with active noise cancellation.
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div></div>
+  </div>
+</div>
+<div class="footer">
+  © 2026 TechStore | Follow us on social media
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
