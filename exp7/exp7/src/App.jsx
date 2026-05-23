@@ -44,6 +44,5 @@ function App(){
         <StudentCard name="Alice Johnson" course="Physics" marks={78} />
       </div>
     </div>
-  );
-}
+  );}
 export default App;
