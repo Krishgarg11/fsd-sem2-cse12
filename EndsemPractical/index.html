@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even or Odd Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="checker-container">
+        <h1>Even or Odd?</h1>
+        <p class="subtitle">Type a number below to find out instantly.</p>
+
+        <div class="input-group">
+            <input type="number" id="numberInput" placeholder="Enter any integer..." autocomplete="off" step="1">
+            <button type="button" id="checkButton">Check</button>
+        </div>
+
+        <div id="result" class="result-display" aria-live="polite"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
